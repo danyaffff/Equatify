@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */; };
+		A573392C265E870E00C7CC99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573392B265E870E00C7CC99 /* AppDelegate.swift */; };
+		A573392E265E870E00C7CC99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573392D265E870E00C7CC99 /* ViewController.swift */; };
+		A5733930265E871100C7CC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A573392F265E871100C7CC99 /* Assets.xcassets */; };
+		A5733933265E871100C7CC99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5733931265E871100C7CC99 /* Main.storyboard */; };
+		A5733942265E871C00C7CC99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5733941265E871C00C7CC99 /* Cocoa.framework */; };
+		A5733948265E871C00C7CC99 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733947265E871C00C7CC99 /* SourceEditorExtension.m */; };
+		A573394B265E871C00C7CC99 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A573394A265E871C00C7CC99 /* SourceEditorCommand.m */; };
+		A5733950265E871C00C7CC99 /* Equatify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A573393F265E871C00C7CC99 /* Equatify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5733957265E875400C7CC99 /* Equatify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733956265E875400C7CC99 /* Equatify.m */; };
+		A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */; };
+		A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */ = {isa = PBXBuildFile; fileRef = A573395E265E883300C7CC99 /* NSScanner+Scan.m */; };
+		A5733960265E908700C7CC99 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5733943265E871C00C7CC99 /* XcodeKit.framework */; };
+		A5733961265E908700C7CC99 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5733943265E871C00C7CC99 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733964265E98B400C7CC99 /* NSArray+Map.m */; };
+		A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396A265EA12E00C7CC99 /* NSArray+Filter.m */; };
+		A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A573394E265E871C00C7CC99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5733920265E870E00C7CC99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A573393E265E871C00C7CC99;
+			remoteInfo = Equatify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5733954265E871C00C7CC99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5733950265E871C00C7CC99 /* Equatify.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5733962265E908700C7CC99 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5733961265E908700C7CC99 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A52C2CC0265EDE59007E597F /* NSArray+Reduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reduce.h"; sourceTree = "<group>"; };
+		A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reduce.m"; sourceTree = "<group>"; };
+		A5733928265E870E00C7CC99 /* Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A573392B265E870E00C7CC99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A573392D265E870E00C7CC99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A573392F265E871100C7CC99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5733932265E871100C7CC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5733934265E871100C7CC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5733935265E871100C7CC99 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		A573393F265E871C00C7CC99 /* Equatify.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Equatify.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5733941265E871C00C7CC99 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A5733943265E871C00C7CC99 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5733946265E871C00C7CC99 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		A5733947265E871C00C7CC99 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		A5733949265E871C00C7CC99 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		A573394A265E871C00C7CC99 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		A573394C265E871C00C7CC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A573394D265E871C00C7CC99 /* Equatify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equatify.entitlements; sourceTree = "<group>"; };
+		A5733955265E875400C7CC99 /* Equatify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Equatify.h; sourceTree = "<group>"; };
+		A5733956265E875400C7CC99 /* Equatify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Equatify.m; sourceTree = "<group>"; };
+		A5733958265E87B500C7CC99 /* NSMutableArray+Cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Cast.h"; sourceTree = "<group>"; };
+		A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Cast.m"; sourceTree = "<group>"; };
+		A573395D265E883300C7CC99 /* NSScanner+Scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScanner+Scan.h"; sourceTree = "<group>"; };
+		A573395E265E883300C7CC99 /* NSScanner+Scan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+Scan.m"; sourceTree = "<group>"; };
+		A5733963265E98B400C7CC99 /* NSArray+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		A5733964265E98B400C7CC99 /* NSArray+Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		A5733969265EA12E00C7CC99 /* NSArray+Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Filter.h"; sourceTree = "<group>"; };
+		A573396A265EA12E00C7CC99 /* NSArray+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Filter.m"; sourceTree = "<group>"; };
+		A573396C265EA7F900C7CC99 /* NSArray+FlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FlatMap.h"; sourceTree = "<group>"; };
+		A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FlatMap.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5733925265E870E00C7CC99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573393C265E871C00C7CC99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5733942265E871C00C7CC99 /* Cocoa.framework in Frameworks */,
+				A5733960265E908700C7CC99 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A573391F265E870E00C7CC99 = {
+			isa = PBXGroup;
+			children = (
+				A573392A265E870E00C7CC99 /* Extension */,
+				A5733945265E871C00C7CC99 /* Equatify */,
+				A5733940265E871C00C7CC99 /* Frameworks */,
+				A5733929265E870E00C7CC99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5733929265E870E00C7CC99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5733928265E870E00C7CC99 /* Extension.app */,
+				A573393F265E871C00C7CC99 /* Equatify.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A573392A265E870E00C7CC99 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A573392B265E870E00C7CC99 /* AppDelegate.swift */,
+				A573392D265E870E00C7CC99 /* ViewController.swift */,
+				A573392F265E871100C7CC99 /* Assets.xcassets */,
+				A5733931265E871100C7CC99 /* Main.storyboard */,
+				A5733934265E871100C7CC99 /* Info.plist */,
+				A5733935265E871100C7CC99 /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5733940265E871C00C7CC99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5733941265E871C00C7CC99 /* Cocoa.framework */,
+				A5733943265E871C00C7CC99 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5733945265E871C00C7CC99 /* Equatify */ = {
+			isa = PBXGroup;
+			children = (
+				A5733955265E875400C7CC99 /* Equatify.h */,
+				A5733956265E875400C7CC99 /* Equatify.m */,
+				A573395C265E881600C7CC99 /* Source */,
+				A573395B265E87DA00C7CC99 /* Extensions */,
+				A573394C265E871C00C7CC99 /* Info.plist */,
+				A573394D265E871C00C7CC99 /* Equatify.entitlements */,
+			);
+			path = Equatify;
+			sourceTree = "<group>";
+		};
+		A573395B265E87DA00C7CC99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5733971265EA81F00C7CC99 /* NSMutableArray */,
+				A5733970265EA81500C7CC99 /* NSScanner */,
+				A573396F265EA80F00C7CC99 /* NSArray */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A573395C265E881600C7CC99 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A5733946265E871C00C7CC99 /* SourceEditorExtension.h */,
+				A5733947265E871C00C7CC99 /* SourceEditorExtension.m */,
+				A5733949265E871C00C7CC99 /* SourceEditorCommand.h */,
+				A573394A265E871C00C7CC99 /* SourceEditorCommand.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A573396F265EA80F00C7CC99 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				A5733963265E98B400C7CC99 /* NSArray+Map.h */,
+				A5733964265E98B400C7CC99 /* NSArray+Map.m */,
+				A5733969265EA12E00C7CC99 /* NSArray+Filter.h */,
+				A573396A265EA12E00C7CC99 /* NSArray+Filter.m */,
+				A573396C265EA7F900C7CC99 /* NSArray+FlatMap.h */,
+				A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */,
+				A52C2CC0265EDE59007E597F /* NSArray+Reduce.h */,
+				A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		A5733970265EA81500C7CC99 /* NSScanner */ = {
+			isa = PBXGroup;
+			children = (
+				A573395D265E883300C7CC99 /* NSScanner+Scan.h */,
+				A573395E265E883300C7CC99 /* NSScanner+Scan.m */,
+			);
+			path = NSScanner;
+			sourceTree = "<group>";
+		};
+		A5733971265EA81F00C7CC99 /* NSMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				A5733958265E87B500C7CC99 /* NSMutableArray+Cast.h */,
+				A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */,
+			);
+			path = NSMutableArray;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5733927265E870E00C7CC99 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5733938265E871100C7CC99 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				A5733924265E870E00C7CC99 /* Sources */,
+				A5733925265E870E00C7CC99 /* Frameworks */,
+				A5733926265E870E00C7CC99 /* Resources */,
+				A5733954265E871C00C7CC99 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A573394F265E871C00C7CC99 /* PBXTargetDependency */,
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = A5733928265E870E00C7CC99 /* Extension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A573393E265E871C00C7CC99 /* Equatify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5733951265E871C00C7CC99 /* Build configuration list for PBXNativeTarget "Equatify" */;
+			buildPhases = (
+				A573393B265E871C00C7CC99 /* Sources */,
+				A573393C265E871C00C7CC99 /* Frameworks */,
+				A573393D265E871C00C7CC99 /* Resources */,
+				A5733962265E908700C7CC99 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Equatify;
+			productName = Equatify;
+			productReference = A573393F265E871C00C7CC99 /* Equatify.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5733920265E870E00C7CC99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A5733927265E870E00C7CC99 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					A573393E265E871C00C7CC99 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A5733923265E870E00C7CC99 /* Build configuration list for PBXProject "Extension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A573391F265E870E00C7CC99;
+			productRefGroup = A5733929265E870E00C7CC99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5733927265E870E00C7CC99 /* Extension */,
+				A573393E265E871C00C7CC99 /* Equatify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5733926265E870E00C7CC99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5733930265E871100C7CC99 /* Assets.xcassets in Resources */,
+				A5733933265E871100C7CC99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573393D265E871C00C7CC99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5733924265E870E00C7CC99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573392E265E870E00C7CC99 /* ViewController.swift in Sources */,
+				A573392C265E870E00C7CC99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573393B265E871C00C7CC99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */,
+				A5733948265E871C00C7CC99 /* SourceEditorExtension.m in Sources */,
+				A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */,
+				A573394B265E871C00C7CC99 /* SourceEditorCommand.m in Sources */,
+				A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */,
+				A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */,
+				A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */,
+				A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */,
+				A5733957265E875400C7CC99 /* Equatify.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A573394F265E871C00C7CC99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A573393E265E871C00C7CC99 /* Equatify */;
+			targetProxy = A573394E265E871C00C7CC99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5733931265E871100C7CC99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5733932265E871100C7CC99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5733936265E871100C7CC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5733937265E871100C7CC99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A5733939265E871100C7CC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RN4699K8KE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danyaffff.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A573393A265E871100C7CC99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RN4699K8KE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danyaffff.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A5733952265E871C00C7CC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Equatify/Equatify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RN4699K8KE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Equatify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danyaffff.Extension.Equatify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5733953265E871C00C7CC99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Equatify/Equatify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RN4699K8KE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Equatify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danyaffff.Extension.Equatify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5733923265E870E00C7CC99 /* Build configuration list for PBXProject "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5733936265E871100C7CC99 /* Debug */,
+				A5733937265E871100C7CC99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5733938265E871100C7CC99 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5733939265E871100C7CC99 /* Debug */,
+				A573393A265E871100C7CC99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5733951265E871C00C7CC99 /* Build configuration list for PBXNativeTarget "Equatify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5733952265E871C00C7CC99 /* Debug */,
+				A5733953265E871C00C7CC99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5733920265E870E00C7CC99 /* Project object */;
+}
