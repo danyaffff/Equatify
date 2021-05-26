@@ -27,6 +27,8 @@
 		A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811151265EF9F5002CB103 /* HashifyExtension.m */; };
 		A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811154265EFA38002CB103 /* HashifyCommand.m */; };
 		A581115A265EFB0C002CB103 /* Hashify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811159265EFB0C002CB103 /* Hashify.m */; };
+		A581115D265F0375002CB103 /* NSString+Checker.m in Sources */ = {isa = PBXBuildFile; fileRef = A581115C265F0375002CB103 /* NSString+Checker.m */; };
+		A5811162265F05A7002CB103 /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811161265F05A7002CB103 /* Processor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,11 @@
 		A5811154265EFA38002CB103 /* HashifyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashifyCommand.m; sourceTree = "<group>"; };
 		A5811158265EFB0C002CB103 /* Hashify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashify.h; sourceTree = "<group>"; };
 		A5811159265EFB0C002CB103 /* Hashify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hashify.m; sourceTree = "<group>"; };
+		A581115B265F0375002CB103 /* NSString+Checker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Checker.h"; sourceTree = "<group>"; };
+		A581115C265F0375002CB103 /* NSString+Checker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Checker.m"; sourceTree = "<group>"; };
+		A581115F265F0431002CB103 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		A5811160265F05A7002CB103 /* Processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		A5811161265F05A7002CB103 /* Processor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Processor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +178,7 @@
 				A5733956265E875400C7CC99 /* Equatify.m */,
 				A5811158265EFB0C002CB103 /* Hashify.h */,
 				A5811159265EFB0C002CB103 /* Hashify.m */,
+				A5811163265F05B6002CB103 /* Internal */,
 				A573395C265E881600C7CC99 /* Source */,
 				A573395B265E87DA00C7CC99 /* Extensions */,
 				A573394C265E871C00C7CC99 /* Info.plist */,
@@ -185,6 +193,7 @@
 				A5733971265EA81F00C7CC99 /* NSMutableArray */,
 				A5733970265EA81500C7CC99 /* NSScanner */,
 				A573396F265EA80F00C7CC99 /* NSArray */,
+				A581115E265F0379002CB103 /* NSString */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -251,6 +260,25 @@
 				A5811154265EFA38002CB103 /* HashifyCommand.m */,
 			);
 			path = Hashify;
+			sourceTree = "<group>";
+		};
+		A581115E265F0379002CB103 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				A581115B265F0375002CB103 /* NSString+Checker.h */,
+				A581115C265F0375002CB103 /* NSString+Checker.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		A5811163265F05B6002CB103 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A5811160265F05A7002CB103 /* Processor.h */,
+				A5811161265F05A7002CB103 /* Processor.m */,
+				A581115F265F0431002CB103 /* Bridge.h */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +392,7 @@
 			files = (
 				A581115A265EFB0C002CB103 /* Hashify.m in Sources */,
 				A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */,
+				A5811162265F05A7002CB103 /* Processor.m in Sources */,
 				A5733948265E871C00C7CC99 /* EquatifyExtension.m in Sources */,
 				A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */,
 				A573394B265E871C00C7CC99 /* EquatifyCommand.m in Sources */,
@@ -374,6 +403,7 @@
 				A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */,
 				A5733957265E875400C7CC99 /* Equatify.m in Sources */,
 				A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */,
+				A581115D265F0375002CB103 /* NSString+Checker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

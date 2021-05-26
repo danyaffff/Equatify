@@ -12,11 +12,8 @@
 @property XCSourceTextBuffer *buffer;
 
 - (NSArray<NSString *> *)createNewLines;
-- (NSString *)getType;
 - (NSArray<NSString *> *)createBody;
-- (NSArray<NSString *> *)getVariables;
 - (NSArray<NSString *> *)createContentWithType:(NSString *)type andBody:(NSArray<NSString *> *)body;
-- (BOOL)isCorrectString:(NSString *)string;
 
 @end
 
@@ -41,26 +38,14 @@
 }
 
 - (NSArray<NSString *> *)createNewLines {
-    NSString *type = [self getType];
+    NSString *type = [Processor getTypeFromBuffer:[self buffer]];
     NSArray<NSString *> *body = [self createBody];
     
     return [self createContentWithType:type andBody:body];
 }
 
-- (NSString *)getType {
-    if ([[[self buffer] selections] firstObject] == nil) {
-        @throw [NSException exceptionWithName:@"No selection!" reason:@"There is no selected area!" userInfo:nil];
-    }
-    
-    XCSourceTextRange *selection = [[[self buffer] selections] firstObject];
-    NSInteger line = [selection start].line;
-    NSString *firstLine = [[[self buffer] lines] castAtIndexToNSString](line);
-    
-    return [NSScanner scanTypeNameInString:firstLine];
-}
-
 - (NSArray<NSString *> *)createBody {
-    NSArray<NSString *> *variables = [self getVariables];
+    NSArray<NSString *> *variables = [Processor getVariablesFromBuffer:[self buffer]];
     NSString *indentation = [@"" stringByPaddingToLength:[[self buffer] indentationWidth] withString:@" " startingAtIndex:0];
     NSString *doubleIndentation = [@"" stringByPaddingToLength:2 * [[self buffer] indentationWidth] withString:@" " startingAtIndex:0];
     
@@ -88,30 +73,6 @@
     }];
 }
 
-- (NSArray<NSString *> *)getVariables {
-    if ([[[self buffer] selections] firstObject] == nil) {
-        @throw [NSException exceptionWithName:@"No selection!" reason:@"There is no selected area!" userInfo:nil];
-    }
-    
-    XCSourceTextRange *selection = [[[self buffer] selections] firstObject];
-    NSInteger startLineIndex = [selection start].line + 1;
-    NSInteger endLineIndex = [selection end].line;
-    
-    
-    NSMutableArray *selectionRange = [NSMutableArray array];
-    for (NSInteger i = startLineIndex; i < endLineIndex; i++) {
-        [selectionRange addObject:@(i)];
-    }
-    
-    return [[[selectionRange map:^id _Nonnull(id  _Nonnull obj) {
-        return [[[self buffer] lines] castAtIndexToNSString]([obj integerValue]);
-    }] filter:^BOOL(id  _Nonnull obj) {
-        return [self isCorrectString:obj];
-    }] flatMap:^id _Nonnull(id  _Nonnull obj) {
-        return [NSScanner scanVariablesInString:obj];
-    }];
-}
-
 - (NSArray<NSString *> *)createContentWithType:(NSString *)type andBody:(NSArray<NSString *> *)body {
     NSString *indentation = [@"" stringByPaddingToLength:[[self buffer] indentationWidth] withString:@" " startingAtIndex:0];
     NSString *extensionStart = [NSString stringWithFormat:@"extension %@: Equatable {", type];
@@ -125,18 +86,6 @@
     NSMutableArray<NSString *> *extension = [NSMutableArray arrayWithObjects:@"", extensionStart, funcStart, reducedBody, funcEnd, extensionEnd, nil];
     
     return extension;
-}
-
-- (BOOL)isCorrectString:(NSString *)string {
-    NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:@" *\n" options:0 error:nil];
-    NSRange range = NSMakeRange(0, string.length);
-    NSString *replaced = [expression stringByReplacingMatchesInString:string options:0 range:range withTemplate:@""];
-    
-    NSScanner *scanner = [NSScanner scannerWithString:string];
-    NSString *stringWithoutComments = [scanner scanUpToString:@"//"];
-    [stringWithoutComments stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" "]];
-    
-    return replaced.length != 0 && [stringWithoutComments isNotEqualTo:NULL] && ![stringWithoutComments containsString:@"func "] && ![stringWithoutComments containsString:@"{"] && ![stringWithoutComments containsString:@"}"] && ![stringWithoutComments containsString:@"print"] && ([stringWithoutComments containsString:@"var "] || [stringWithoutComments containsString:@"let "]);
 }
 
 @end

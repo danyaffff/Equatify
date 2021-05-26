@@ -12,11 +12,8 @@
 @property XCSourceTextBuffer *buffer;
 
 - (NSArray<NSString *> *)createNewLines;
-- (NSString *)getType;
 - (NSArray<NSString *> *)createBody;
-- (NSArray<NSString *> *)getVariables;
 - (NSArray<NSString *> *)createContentWithType:(NSString *)type andBody:(NSArray<NSString *> *)body;
-- (BOOL)isCorrectString:(NSString *)string;
 
 @end
 
@@ -60,7 +57,7 @@
 }
 
 - (NSArray<NSString *> *)createBody {
-    NSArray<NSString *> *variables = [self getVariables];
+    NSArray<NSString *> *variables = [Processor getVariablesFromBuffer:[self buffer]];
     NSString *doubleIndentation = [@"" stringByPaddingToLength:2 * [[self buffer] indentationWidth] withString:@" " startingAtIndex:0];
     
     if ([variables count] == 0) {
@@ -69,30 +66,6 @@
     
     return [variables map:^id _Nonnull(id  _Nonnull obj) {
         return [doubleIndentation stringByAppendingString:[NSString stringWithFormat:@"hasher.combine(%@)", obj]];
-    }];
-}
-
-- (NSArray<NSString *> *)getVariables {
-    if ([[[self buffer] selections] firstObject] == nil) {
-        @throw [NSException exceptionWithName:@"No selection!" reason:@"There is no selected area!" userInfo:nil];
-    }
-    
-    XCSourceTextRange *selection = [[[self buffer] selections] firstObject];
-    NSInteger startLineIndex = [selection start].line + 1;
-    NSInteger endLineIndex = [selection end].line;
-    
-    
-    NSMutableArray *selectionRange = [NSMutableArray array];
-    for (NSInteger i = startLineIndex; i < endLineIndex; i++) {
-        [selectionRange addObject:@(i)];
-    }
-    
-    return [[[selectionRange map:^id _Nonnull(id  _Nonnull obj) {
-        return [[[self buffer] lines] castAtIndexToNSString]([obj integerValue]);
-    }] filter:^BOOL(id  _Nonnull obj) {
-        return [self isCorrectString:obj];
-    }] flatMap:^id _Nonnull(id  _Nonnull obj) {
-        return [NSScanner scanVariablesInString:obj];
     }];
 }
 
