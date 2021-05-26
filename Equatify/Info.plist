@@ -36,9 +36,17 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Equatify</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>HashifyCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).Hashify</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Hashify</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
-			<string>EquatifyExtension</string>
+			<string>HashifyExtension</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.dt.Xcode.extension.source-editor</string>

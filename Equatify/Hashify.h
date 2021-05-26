@@ -1,8 +1,8 @@
 //
-//  Equatify.h
+//  Hashify.h
 //  Equatify
 //
-//  Created by Даниил Храповицкий on 26.05.2021.
+//  Created by Даниил Храповицкий on 27.05.2021.
 //
 
 #import <XcodeKit/XcodeKit.h>
@@ -15,10 +15,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Equatify : NSObject
+@interface Hashify : NSObject
 
 - (instancetype)initWithBuffer:(XCSourceTextBuffer *)buffer;
-- (void)equatify;
+- (void)hashify;
 
 @end
 

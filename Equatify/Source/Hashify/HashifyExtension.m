@@ -1,16 +1,16 @@
 //
-//  SourceEditorExtension.m
+//  HashifyExtension.m
 //  Equatify
 //
-//  Created by Даниил Храповицкий on 26.05.2021.
+//  Created by Даниил Храповицкий on 27.05.2021.
 //
 
-#import "SourceEditorExtension.h"
+#import "HashifyExtension.h"
 
-@implementation EquatifyExtension
+@implementation HashifyExtension
 
 - (void)extensionDidFinishLaunching {
-    NSLog(@"ready");
+    NSLog(@"hashify ready");
 }
 
 /*

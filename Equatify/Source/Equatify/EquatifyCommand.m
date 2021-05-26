@@ -5,7 +5,7 @@
 //  Created by Даниил Храповицкий on 26.05.2021.
 //
 
-#import "SourceEditorCommand.h"
+#import "EquatifyCommand.h"
 #import "Equatify.h"
 
 @implementation EquatifyCommand

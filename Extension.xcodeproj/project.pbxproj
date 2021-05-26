@@ -13,8 +13,8 @@
 		A5733930265E871100C7CC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A573392F265E871100C7CC99 /* Assets.xcassets */; };
 		A5733933265E871100C7CC99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5733931265E871100C7CC99 /* Main.storyboard */; };
 		A5733942265E871C00C7CC99 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5733941265E871C00C7CC99 /* Cocoa.framework */; };
-		A5733948265E871C00C7CC99 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733947265E871C00C7CC99 /* SourceEditorExtension.m */; };
-		A573394B265E871C00C7CC99 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A573394A265E871C00C7CC99 /* SourceEditorCommand.m */; };
+		A5733948265E871C00C7CC99 /* EquatifyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733947265E871C00C7CC99 /* EquatifyExtension.m */; };
+		A573394B265E871C00C7CC99 /* EquatifyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A573394A265E871C00C7CC99 /* EquatifyCommand.m */; };
 		A5733950265E871C00C7CC99 /* Equatify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A573393F265E871C00C7CC99 /* Equatify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5733957265E875400C7CC99 /* Equatify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733956265E875400C7CC99 /* Equatify.m */; };
 		A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */; };
@@ -24,6 +24,9 @@
 		A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733964265E98B400C7CC99 /* NSArray+Map.m */; };
 		A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396A265EA12E00C7CC99 /* NSArray+Filter.m */; };
 		A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */; };
+		A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811151265EF9F5002CB103 /* HashifyExtension.m */; };
+		A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811154265EFA38002CB103 /* HashifyCommand.m */; };
+		A581115A265EFB0C002CB103 /* Hashify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811159265EFB0C002CB103 /* Hashify.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +77,10 @@
 		A573393F265E871C00C7CC99 /* Equatify.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Equatify.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5733941265E871C00C7CC99 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A5733943265E871C00C7CC99 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
-		A5733946265E871C00C7CC99 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
-		A5733947265E871C00C7CC99 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
-		A5733949265E871C00C7CC99 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
-		A573394A265E871C00C7CC99 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		A5733946265E871C00C7CC99 /* EquatifyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquatifyExtension.h; sourceTree = "<group>"; };
+		A5733947265E871C00C7CC99 /* EquatifyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquatifyExtension.m; sourceTree = "<group>"; };
+		A5733949265E871C00C7CC99 /* EquatifyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquatifyCommand.h; sourceTree = "<group>"; };
+		A573394A265E871C00C7CC99 /* EquatifyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EquatifyCommand.m; sourceTree = "<group>"; };
 		A573394C265E871C00C7CC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A573394D265E871C00C7CC99 /* Equatify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equatify.entitlements; sourceTree = "<group>"; };
 		A5733955265E875400C7CC99 /* Equatify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Equatify.h; sourceTree = "<group>"; };
@@ -92,6 +95,12 @@
 		A573396A265EA12E00C7CC99 /* NSArray+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Filter.m"; sourceTree = "<group>"; };
 		A573396C265EA7F900C7CC99 /* NSArray+FlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FlatMap.h"; sourceTree = "<group>"; };
 		A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FlatMap.m"; sourceTree = "<group>"; };
+		A5811150265EF9F5002CB103 /* HashifyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashifyExtension.h; sourceTree = "<group>"; };
+		A5811151265EF9F5002CB103 /* HashifyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashifyExtension.m; sourceTree = "<group>"; };
+		A5811153265EFA38002CB103 /* HashifyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashifyCommand.h; sourceTree = "<group>"; };
+		A5811154265EFA38002CB103 /* HashifyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashifyCommand.m; sourceTree = "<group>"; };
+		A5811158265EFB0C002CB103 /* Hashify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashify.h; sourceTree = "<group>"; };
+		A5811159265EFB0C002CB103 /* Hashify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hashify.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,8 @@
 			children = (
 				A5733955265E875400C7CC99 /* Equatify.h */,
 				A5733956265E875400C7CC99 /* Equatify.m */,
+				A5811158265EFB0C002CB103 /* Hashify.h */,
+				A5811159265EFB0C002CB103 /* Hashify.m */,
 				A573395C265E881600C7CC99 /* Source */,
 				A573395B265E87DA00C7CC99 /* Extensions */,
 				A573394C265E871C00C7CC99 /* Info.plist */,
@@ -181,10 +192,8 @@
 		A573395C265E881600C7CC99 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A5733946265E871C00C7CC99 /* SourceEditorExtension.h */,
-				A5733947265E871C00C7CC99 /* SourceEditorExtension.m */,
-				A5733949265E871C00C7CC99 /* SourceEditorCommand.h */,
-				A573394A265E871C00C7CC99 /* SourceEditorCommand.m */,
+				A5811156265EFA71002CB103 /* Equatify */,
+				A5811157265EFA79002CB103 /* Hashify */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -220,6 +229,28 @@
 				A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */,
 			);
 			path = NSMutableArray;
+			sourceTree = "<group>";
+		};
+		A5811156265EFA71002CB103 /* Equatify */ = {
+			isa = PBXGroup;
+			children = (
+				A5733946265E871C00C7CC99 /* EquatifyExtension.h */,
+				A5733947265E871C00C7CC99 /* EquatifyExtension.m */,
+				A5733949265E871C00C7CC99 /* EquatifyCommand.h */,
+				A573394A265E871C00C7CC99 /* EquatifyCommand.m */,
+			);
+			path = Equatify;
+			sourceTree = "<group>";
+		};
+		A5811157265EFA79002CB103 /* Hashify */ = {
+			isa = PBXGroup;
+			children = (
+				A5811150265EF9F5002CB103 /* HashifyExtension.h */,
+				A5811151265EF9F5002CB103 /* HashifyExtension.m */,
+				A5811153265EFA38002CB103 /* HashifyCommand.h */,
+				A5811154265EFA38002CB103 /* HashifyCommand.m */,
+			);
+			path = Hashify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,15 +362,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A581115A265EFB0C002CB103 /* Hashify.m in Sources */,
 				A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */,
-				A5733948265E871C00C7CC99 /* SourceEditorExtension.m in Sources */,
+				A5733948265E871C00C7CC99 /* EquatifyExtension.m in Sources */,
 				A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */,
-				A573394B265E871C00C7CC99 /* SourceEditorCommand.m in Sources */,
+				A573394B265E871C00C7CC99 /* EquatifyCommand.m in Sources */,
 				A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */,
 				A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */,
 				A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */,
 				A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */,
+				A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */,
 				A5733957265E875400C7CC99 /* Equatify.m in Sources */,
+				A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
