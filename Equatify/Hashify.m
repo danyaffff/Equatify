@@ -38,22 +38,10 @@
 }
 
 - (NSArray<NSString *> *)createNewLines {
-    NSString *type = [self getType];
+    NSString *type = [Processor getTypeFromBuffer:[self buffer]];
     NSArray<NSString *> *body = [self createBody];
     
     return [self createContentWithType:type andBody:body];
-}
-
-- (NSString *)getType {
-    if ([[[self buffer] selections] firstObject] == nil) {
-        @throw [NSException exceptionWithName:@"No selection!" reason:@"There is no selected area!" userInfo:nil];
-    }
-    
-    XCSourceTextRange *selection = [[[self buffer] selections] firstObject];
-    NSInteger line = [selection start].line;
-    NSString *firstLine = [[[self buffer] lines] castAtIndexToNSString](line);
-    
-    return [NSScanner scanTypeNameInString:firstLine];
 }
 
 - (NSArray<NSString *> *)createBody {

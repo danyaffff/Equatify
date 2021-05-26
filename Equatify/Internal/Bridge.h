@@ -6,8 +6,8 @@
 //
 
 #import <XcodeKit/XcodeKit.h>
-#import "../Extensions/NSMutableArray/NSMutableArray+Cast.h"
 #import "../Extensions/NSScanner/NSScanner+Scan.h"
+#import "../Extensions/NSArray/NSArray+Cast.h"
 #import "../Extensions/NSArray/NSArray+Map.h"
 #import "../Extensions/NSArray/NSArray+Filter.h"
 #import "../Extensions/NSArray/NSArray+FlatMap.h"

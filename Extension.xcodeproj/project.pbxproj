@@ -17,7 +17,6 @@
 		A573394B265E871C00C7CC99 /* EquatifyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A573394A265E871C00C7CC99 /* EquatifyCommand.m */; };
 		A5733950265E871C00C7CC99 /* Equatify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A573393F265E871C00C7CC99 /* Equatify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5733957265E875400C7CC99 /* Equatify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733956265E875400C7CC99 /* Equatify.m */; };
-		A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */; };
 		A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */ = {isa = PBXBuildFile; fileRef = A573395E265E883300C7CC99 /* NSScanner+Scan.m */; };
 		A5733960265E908700C7CC99 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5733943265E871C00C7CC99 /* XcodeKit.framework */; };
 		A5733961265E908700C7CC99 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5733943265E871C00C7CC99 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -29,6 +28,7 @@
 		A581115A265EFB0C002CB103 /* Hashify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811159265EFB0C002CB103 /* Hashify.m */; };
 		A581115D265F0375002CB103 /* NSString+Checker.m in Sources */ = {isa = PBXBuildFile; fileRef = A581115C265F0375002CB103 /* NSString+Checker.m */; };
 		A5811162265F05A7002CB103 /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811161265F05A7002CB103 /* Processor.m */; };
+		A5811166265F0D02002CB103 /* NSArray+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811165265F0D02002CB103 /* NSArray+Cast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +87,6 @@
 		A573394D265E871C00C7CC99 /* Equatify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Equatify.entitlements; sourceTree = "<group>"; };
 		A5733955265E875400C7CC99 /* Equatify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Equatify.h; sourceTree = "<group>"; };
 		A5733956265E875400C7CC99 /* Equatify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Equatify.m; sourceTree = "<group>"; };
-		A5733958265E87B500C7CC99 /* NSMutableArray+Cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Cast.h"; sourceTree = "<group>"; };
-		A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Cast.m"; sourceTree = "<group>"; };
 		A573395D265E883300C7CC99 /* NSScanner+Scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScanner+Scan.h"; sourceTree = "<group>"; };
 		A573395E265E883300C7CC99 /* NSScanner+Scan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+Scan.m"; sourceTree = "<group>"; };
 		A5733963265E98B400C7CC99 /* NSArray+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
@@ -108,6 +106,8 @@
 		A581115F265F0431002CB103 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		A5811160265F05A7002CB103 /* Processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
 		A5811161265F05A7002CB103 /* Processor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Processor.m; sourceTree = "<group>"; };
+		A5811164265F0D02002CB103 /* NSArray+Cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Cast.h"; sourceTree = "<group>"; };
+		A5811165265F0D02002CB103 /* NSArray+Cast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Cast.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,6 @@
 		A573395B265E87DA00C7CC99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A5733971265EA81F00C7CC99 /* NSMutableArray */,
 				A5733970265EA81500C7CC99 /* NSScanner */,
 				A573396F265EA80F00C7CC99 /* NSArray */,
 				A581115E265F0379002CB103 /* NSString */,
@@ -218,6 +217,8 @@
 				A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */,
 				A52C2CC0265EDE59007E597F /* NSArray+Reduce.h */,
 				A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */,
+				A5811164265F0D02002CB103 /* NSArray+Cast.h */,
+				A5811165265F0D02002CB103 /* NSArray+Cast.m */,
 			);
 			path = NSArray;
 			sourceTree = "<group>";
@@ -229,15 +230,6 @@
 				A573395E265E883300C7CC99 /* NSScanner+Scan.m */,
 			);
 			path = NSScanner;
-			sourceTree = "<group>";
-		};
-		A5733971265EA81F00C7CC99 /* NSMutableArray */ = {
-			isa = PBXGroup;
-			children = (
-				A5733958265E87B500C7CC99 /* NSMutableArray+Cast.h */,
-				A5733959265E87B500C7CC99 /* NSMutableArray+Cast.m */,
-			);
-			path = NSMutableArray;
 			sourceTree = "<group>";
 		};
 		A5811156265EFA71002CB103 /* Equatify */ = {
@@ -391,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A581115A265EFB0C002CB103 /* Hashify.m in Sources */,
-				A573395A265E87B500C7CC99 /* NSMutableArray+Cast.m in Sources */,
 				A5811162265F05A7002CB103 /* Processor.m in Sources */,
 				A5733948265E871C00C7CC99 /* EquatifyExtension.m in Sources */,
 				A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */,
@@ -401,6 +392,7 @@
 				A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */,
 				A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */,
 				A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */,
+				A5811166265F0D02002CB103 /* NSArray+Cast.m in Sources */,
 				A5733957265E875400C7CC99 /* Equatify.m in Sources */,
 				A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */,
 				A581115D265F0375002CB103 /* NSString+Checker.m in Sources */,

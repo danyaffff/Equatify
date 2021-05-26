@@ -83,9 +83,7 @@
         return [NSString stringWithFormat:@"%@%@", obj1, obj2];
     }];
     
-    NSMutableArray<NSString *> *extension = [NSMutableArray arrayWithObjects:@"", extensionStart, funcStart, reducedBody, funcEnd, extensionEnd, nil];
-    
-    return extension;
+    return [NSArray arrayWithObjects:@"", extensionStart, funcStart, reducedBody, funcEnd, extensionEnd, nil];
 }
 
 @end

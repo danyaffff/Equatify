@@ -16,7 +16,7 @@
     
     XCSourceTextRange *selection = [[buffer selections] firstObject];
     NSInteger line = [selection start].line;
-    NSString *firstLine = [[buffer lines] castAtIndexToNSString](line);
+    NSString *firstLine = [[buffer lines] castAtIndexToClass:[NSString class]](line);
     
     return [NSScanner scanTypeNameInString:firstLine];
 }
@@ -38,7 +38,7 @@
     }
     
     return [[[selectionRange map:^id _Nonnull(id  _Nonnull obj) {
-        return [[buffer lines] castAtIndexToNSString]([obj integerValue]);
+        return [[buffer lines] castAtIndexToClass:[NSString class]]([obj integerValue]);
     }] filter:^BOOL(id  _Nonnull obj) {
         return [obj isCorrectString];
     }] flatMap:^id _Nonnull(id  _Nonnull obj) {
