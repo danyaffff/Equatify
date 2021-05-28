@@ -10,7 +10,7 @@
 @implementation HashifyCommand
 
 - (void)performCommandWithInvocation:(nonnull XCSourceEditorCommandInvocation *)invocation completionHandler:(nonnull void (^)(NSError * _Nullable))completionHandler { 
-    Hashify *hashify = [[Hashify new] initWithBuffer:invocation.buffer];
+    Hashify *hashify = [[Hashify new] initWithBuffer:[invocation buffer]];
     
     @try {
         [hashify hashify];

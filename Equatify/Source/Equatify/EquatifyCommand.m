@@ -12,7 +12,7 @@
 
 - (void)performCommandWithInvocation:(XCSourceEditorCommandInvocation *)invocation completionHandler:(void (^)(NSError * _Nullable nilOrError))completionHandler {
     
-    Equatify *equatify = [[Equatify new] initWithBuffer:invocation.buffer];
+    Equatify *equatify = [[Equatify new] initWithBuffer:[invocation buffer]];
     
     @try {
         [equatify equatify];
