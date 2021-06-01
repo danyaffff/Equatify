@@ -9,10 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Equatify : NSObject
+@interface Equatify : NSObject <EquatifyProtocol>
 
 - (instancetype)initWithBuffer:(XCSourceTextBuffer *)buffer;
-- (void)equatify;
+- (void)perform;
+
++ (NSString *)identifier;
 
 @end
 

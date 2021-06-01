@@ -13,4 +13,5 @@
 #import "../Extensions/NSArray/NSArray+FlatMap.h"
 #import "../Extensions/NSArray/NSArray+Reduce.h"
 #import "../Extensions/NSString/NSString+Checker.h"
+#import "../Extensions/EquatifyProtocol.h"
 #import "Processor.h"

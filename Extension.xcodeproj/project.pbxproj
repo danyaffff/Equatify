@@ -23,8 +23,6 @@
 		A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = A5733964265E98B400C7CC99 /* NSArray+Map.m */; };
 		A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396A265EA12E00C7CC99 /* NSArray+Filter.m */; };
 		A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */; };
-		A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811151265EF9F5002CB103 /* HashifyExtension.m */; };
-		A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811154265EFA38002CB103 /* HashifyCommand.m */; };
 		A581115A265EFB0C002CB103 /* Hashify.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811159265EFB0C002CB103 /* Hashify.m */; };
 		A581115D265F0375002CB103 /* NSString+Checker.m in Sources */ = {isa = PBXBuildFile; fileRef = A581115C265F0375002CB103 /* NSString+Checker.m */; };
 		A5811162265F05A7002CB103 /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811161265F05A7002CB103 /* Processor.m */; };
@@ -69,6 +67,7 @@
 /* Begin PBXFileReference section */
 		A52C2CC0265EDE59007E597F /* NSArray+Reduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reduce.h"; sourceTree = "<group>"; };
 		A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reduce.m"; sourceTree = "<group>"; };
+		A55285E12665AEDE00AC6E36 /* EquatifyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquatifyProtocol.h; sourceTree = "<group>"; };
 		A5733928265E870E00C7CC99 /* Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573392B265E870E00C7CC99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A573392D265E870E00C7CC99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,10 +94,6 @@
 		A573396A265EA12E00C7CC99 /* NSArray+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Filter.m"; sourceTree = "<group>"; };
 		A573396C265EA7F900C7CC99 /* NSArray+FlatMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FlatMap.h"; sourceTree = "<group>"; };
 		A573396D265EA7F900C7CC99 /* NSArray+FlatMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FlatMap.m"; sourceTree = "<group>"; };
-		A5811150265EF9F5002CB103 /* HashifyExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashifyExtension.h; sourceTree = "<group>"; };
-		A5811151265EF9F5002CB103 /* HashifyExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashifyExtension.m; sourceTree = "<group>"; };
-		A5811153265EFA38002CB103 /* HashifyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashifyCommand.h; sourceTree = "<group>"; };
-		A5811154265EFA38002CB103 /* HashifyCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashifyCommand.m; sourceTree = "<group>"; };
 		A5811158265EFB0C002CB103 /* Hashify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hashify.h; sourceTree = "<group>"; };
 		A5811159265EFB0C002CB103 /* Hashify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hashify.m; sourceTree = "<group>"; };
 		A581115B265F0375002CB103 /* NSString+Checker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Checker.h"; sourceTree = "<group>"; };
@@ -190,6 +185,7 @@
 		A573395B265E87DA00C7CC99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A55285E12665AEDE00AC6E36 /* EquatifyProtocol.h */,
 				A5733970265EA81500C7CC99 /* NSScanner */,
 				A573396F265EA80F00C7CC99 /* NSArray */,
 				A581115E265F0379002CB103 /* NSString */,
@@ -201,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				A5811156265EFA71002CB103 /* Equatify */,
-				A5811157265EFA79002CB103 /* Hashify */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -241,17 +236,6 @@
 				A573394A265E871C00C7CC99 /* EquatifyCommand.m */,
 			);
 			path = Equatify;
-			sourceTree = "<group>";
-		};
-		A5811157265EFA79002CB103 /* Hashify */ = {
-			isa = PBXGroup;
-			children = (
-				A5811150265EF9F5002CB103 /* HashifyExtension.h */,
-				A5811151265EF9F5002CB103 /* HashifyExtension.m */,
-				A5811153265EFA38002CB103 /* HashifyCommand.h */,
-				A5811154265EFA38002CB103 /* HashifyCommand.m */,
-			);
-			path = Hashify;
 			sourceTree = "<group>";
 		};
 		A581115E265F0379002CB103 /* NSString */ = {
@@ -391,10 +375,8 @@
 				A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */,
 				A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */,
 				A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */,
-				A5811152265EF9F5002CB103 /* HashifyExtension.m in Sources */,
 				A5811166265F0D02002CB103 /* NSArray+Cast.m in Sources */,
 				A5733957265E875400C7CC99 /* Equatify.m in Sources */,
-				A5811155265EFA38002CB103 /* HashifyCommand.m in Sources */,
 				A581115D265F0375002CB103 /* NSString+Checker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Hashify : NSObject
+@interface Hashify : NSObject <EquatifyProtocol>
 
 - (instancetype)initWithBuffer:(XCSourceTextBuffer *)buffer;
-- (void)hashify;
+- (void)perform;
+
++ (NSString *)identifier;
 
 @end
 

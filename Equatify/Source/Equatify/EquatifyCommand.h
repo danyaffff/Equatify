@@ -6,6 +6,7 @@
 //
 
 #import <XcodeKit/XcodeKit.h>
+#import "EquatifyProtocol.h"
 
 @interface EquatifyCommand : NSObject <XCSourceEditorCommand>
 

@@ -19,6 +19,10 @@
 
 @implementation Equatify
 
++ (NSString *)identifier {
+    return @"Equatify";
+}
+
 - (instancetype)initWithBuffer:(XCSourceTextBuffer *)buffer {
     self = [super init];
     
@@ -29,7 +33,7 @@
     return self;
 }
 
-- (void)equatify {
+- (void)perform {
     NSArray<NSString *> *newLines = [self createNewLines];
     
     NSLog(@"%@", newLines);

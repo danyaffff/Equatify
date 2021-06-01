@@ -19,6 +19,10 @@
 
 @implementation Hashify
 
++ (NSString *)identifier {
+    return @"Hashify";
+}
+
 - (instancetype)initWithBuffer:(XCSourceTextBuffer *)buffer {
     self = [super init];
     
@@ -29,7 +33,7 @@
     return self;
 }
 
-- (void)hashify {
+- (void)perform {
     NSArray<NSString *> *newLines = [self createNewLines];
     
     NSLog(@"%@", newLines);
