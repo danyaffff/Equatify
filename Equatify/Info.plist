@@ -44,6 +44,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Hashify</string>
 				</dict>
+                <dict>
+                    <key>XCSourceEditorCommandClassName</key>
+                    <string>EquatifyCommand</string>
+                    <key>XCSourceEditorCommandIdentifier</key>
+                    <string>$(PRODUCT_BUNDLE_IDENTIFIER).Derivify</string>
+                    <key>XCSourceEditorCommandName</key>
+                    <string>Derivify</string>
+                </dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>EquatifyExtension</string>

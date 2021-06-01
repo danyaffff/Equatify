@@ -8,6 +8,7 @@
 #import "EquatifyCommand.h"
 #import "Equatify.h"
 #import "Hashify.h"
+#import "Derivify.h"
 
 @implementation EquatifyCommand
 
@@ -19,7 +20,9 @@
         equatify = [[Equatify new] initWithBuffer:[invocation buffer]];
     } else if ([[invocation commandIdentifier] isEqualToString:[bundleID stringByAppendingString:[@"." stringByAppendingString:[Hashify identifier]]]]) {
         equatify = [[Hashify new] initWithBuffer:[invocation buffer]];
-    } else {
+    } else if ([[invocation commandIdentifier] isEqualToString:[bundleID stringByAppendingString:[@"." stringByAppendingString:[Derivify identifier]]]]) {
+        equatify = [Derivify new];
+    }else {
         @throw [NSException exceptionWithName:@"Command not found" reason:[NSString stringWithFormat:@"Command with identifier %@ not found, expected %@ or %@", [invocation commandIdentifier], [bundleID stringByAppendingString:[Equatify identifier]], [bundleID stringByAppendingString:[Hashify identifier]]] userInfo:nil];
     }
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */; };
+		A55285E42665BE9E00AC6E36 /* Script.m in Sources */ = {isa = PBXBuildFile; fileRef = A55285E32665BE9E00AC6E36 /* Script.m */; };
+		A55285EA2665C3C600AC6E36 /* Derivify.m in Sources */ = {isa = PBXBuildFile; fileRef = A55285E92665C3C600AC6E36 /* Derivify.m */; };
 		A573392C265E870E00C7CC99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573392B265E870E00C7CC99 /* AppDelegate.swift */; };
 		A573392E265E870E00C7CC99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573392D265E870E00C7CC99 /* ViewController.swift */; };
 		A5733930265E871100C7CC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A573392F265E871100C7CC99 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		A581115D265F0375002CB103 /* NSString+Checker.m in Sources */ = {isa = PBXBuildFile; fileRef = A581115C265F0375002CB103 /* NSString+Checker.m */; };
 		A5811162265F05A7002CB103 /* Processor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811161265F05A7002CB103 /* Processor.m */; };
 		A5811166265F0D02002CB103 /* NSArray+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = A5811165265F0D02002CB103 /* NSArray+Cast.m */; };
+		A5B623FB2665FACA0085179F /* EquatifyScript.scpt in Resources */ = {isa = PBXBuildFile; fileRef = A55285EB2665CAAB00AC6E36 /* EquatifyScript.scpt */; };
+		A5B623FE2665FB2E0085179F /* EquatifyScript.scpt in CopyFiles */ = {isa = PBXBuildFile; fileRef = A55285EB2665CAAB00AC6E36 /* EquatifyScript.scpt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +66,27 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5B623FC2665FAE50085179F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Users/$USER/Library/Application Scripts/$PRODUCT_BUNDLE_IDENTIFIER";
+			dstSubfolderSpec = 0;
+			files = (
+				A5B623FE2665FB2E0085179F /* EquatifyScript.scpt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A52C2CC0265EDE59007E597F /* NSArray+Reduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Reduce.h"; sourceTree = "<group>"; };
 		A52C2CC1265EDE59007E597F /* NSArray+Reduce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Reduce.m"; sourceTree = "<group>"; };
 		A55285E12665AEDE00AC6E36 /* EquatifyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EquatifyProtocol.h; sourceTree = "<group>"; };
+		A55285E22665BE9E00AC6E36 /* Script.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Script.h; sourceTree = "<group>"; };
+		A55285E32665BE9E00AC6E36 /* Script.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Script.m; sourceTree = "<group>"; };
+		A55285E82665C3C600AC6E36 /* Derivify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Derivify.h; sourceTree = "<group>"; };
+		A55285E92665C3C600AC6E36 /* Derivify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Derivify.m; sourceTree = "<group>"; };
+		A55285EB2665CAAB00AC6E36 /* EquatifyScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EquatifyScript.scpt; sourceTree = "<group>"; };
 		A5733928265E870E00C7CC99 /* Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573392B265E870E00C7CC99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A573392D265E870E00C7CC99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +192,8 @@
 				A5733956265E875400C7CC99 /* Equatify.m */,
 				A5811158265EFB0C002CB103 /* Hashify.h */,
 				A5811159265EFB0C002CB103 /* Hashify.m */,
+				A55285E82665C3C600AC6E36 /* Derivify.h */,
+				A55285E92665C3C600AC6E36 /* Derivify.m */,
 				A5811163265F05B6002CB103 /* Internal */,
 				A573395C265E881600C7CC99 /* Source */,
 				A573395B265E87DA00C7CC99 /* Extensions */,
@@ -185,6 +206,7 @@
 		A573395B265E87DA00C7CC99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A55285EB2665CAAB00AC6E36 /* EquatifyScript.scpt */,
 				A55285E12665AEDE00AC6E36 /* EquatifyProtocol.h */,
 				A5733970265EA81500C7CC99 /* NSScanner */,
 				A573396F265EA80F00C7CC99 /* NSArray */,
@@ -196,7 +218,10 @@
 		A573395C265E881600C7CC99 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A5811156265EFA71002CB103 /* Equatify */,
+				A5733946265E871C00C7CC99 /* EquatifyExtension.h */,
+				A5733947265E871C00C7CC99 /* EquatifyExtension.m */,
+				A5733949265E871C00C7CC99 /* EquatifyCommand.h */,
+				A573394A265E871C00C7CC99 /* EquatifyCommand.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -227,17 +252,6 @@
 			path = NSScanner;
 			sourceTree = "<group>";
 		};
-		A5811156265EFA71002CB103 /* Equatify */ = {
-			isa = PBXGroup;
-			children = (
-				A5733946265E871C00C7CC99 /* EquatifyExtension.h */,
-				A5733947265E871C00C7CC99 /* EquatifyExtension.m */,
-				A5733949265E871C00C7CC99 /* EquatifyCommand.h */,
-				A573394A265E871C00C7CC99 /* EquatifyCommand.m */,
-			);
-			path = Equatify;
-			sourceTree = "<group>";
-		};
 		A581115E265F0379002CB103 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +267,8 @@
 				A5811160265F05A7002CB103 /* Processor.h */,
 				A5811161265F05A7002CB103 /* Processor.m */,
 				A581115F265F0431002CB103 /* Bridge.h */,
+				A55285E22665BE9E00AC6E36 /* Script.h */,
+				A55285E32665BE9E00AC6E36 /* Script.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -286,6 +302,7 @@
 				A573393B265E871C00C7CC99 /* Sources */,
 				A573393C265E871C00C7CC99 /* Frameworks */,
 				A573393D265E871C00C7CC99 /* Resources */,
+				A5B623FC2665FAE50085179F /* CopyFiles */,
 				A5733962265E908700C7CC99 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -347,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B623FB2665FACA0085179F /* EquatifyScript.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,12 +385,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A581115A265EFB0C002CB103 /* Hashify.m in Sources */,
+				A55285EA2665C3C600AC6E36 /* Derivify.m in Sources */,
 				A5811162265F05A7002CB103 /* Processor.m in Sources */,
 				A5733948265E871C00C7CC99 /* EquatifyExtension.m in Sources */,
 				A52C2CC2265EDE59007E597F /* NSArray+Reduce.m in Sources */,
 				A573394B265E871C00C7CC99 /* EquatifyCommand.m in Sources */,
 				A573396E265EA7F900C7CC99 /* NSArray+FlatMap.m in Sources */,
 				A573395F265E883300C7CC99 /* NSScanner+Scan.m in Sources */,
+				A55285E42665BE9E00AC6E36 /* Script.m in Sources */,
 				A573396B265EA12E00C7CC99 /* NSArray+Filter.m in Sources */,
 				A5733965265E98B400C7CC99 /* NSArray+Map.m in Sources */,
 				A5811166265F0D02002CB103 /* NSArray+Cast.m in Sources */,

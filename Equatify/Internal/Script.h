@@ -1,5 +1,5 @@
 //
-//  EquatifyProtocol.h
+//  Script.h
 //  Equatify
 //
 //  Created by Даниил Храповицкий on 01.06.2021.
@@ -9,11 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol EquatifyProtocol <NSObject>
+typedef enum ScriptType : NSInteger {
+    OpenDerivedData = 0
+} ScriptType;
 
-- (void)perform;
+@interface Script : NSObject
 
-+ (NSString *)identifier;
++ (void)run:(ScriptType)script;
 
 @end
 
